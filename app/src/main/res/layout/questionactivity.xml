@@ -101,15 +101,15 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_true"
+        android:background="@drawable/button_purple"
+        android:onClick="checkAnswerTrue"
         android:text="@string/true_text"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonFalse"
-        android:onClick="checkAnswerTrue"/>
+        app:layout_constraintStart_toEndOf="@+id/buttonFalse" />
 
     <Button
         android:id="@+id/buttonFalse"
@@ -119,16 +119,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/button_false"
+        android:background="@drawable/button_purple"
+        android:onClick="checkAnswerFalse"
         android:text="@string/false_text"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonRight"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonRight"
-        android:onClick="checkAnswerFalse"
-         />
+        app:layout_constraintTop_toTopOf="@+id/buttonRight" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
